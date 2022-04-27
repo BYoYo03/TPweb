@@ -6,8 +6,8 @@ def bonjour(request):
     return render(request,"myfirstapp/bonjour.html")
 
 def saisie(request):
-    return render(request,"myfirstapp/bonjour.html")
+    return render(request,"myfirstapp/saisie.html")
 
 def traitement(request):
-    nom = request.GET["nom"]
+    nom = request.POST["nom"]
     return render(request,"myfirstapp/traitement.html", {"nom":nom})
